@@ -181,6 +181,7 @@
     <object>objects\obj_camera</object>
     <object>objects\obj_asteroid</object>
     <object>objects\obj_home_station</object>
+    <object>objects\obj_github_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_boss_1</room>

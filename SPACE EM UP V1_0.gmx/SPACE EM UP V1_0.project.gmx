@@ -11,7 +11,7 @@
     <sounds name="Player Sound Fx">
       <sound>sound\snd_boost</sound>
       <sound>sound\snd_thrust</sound>
-      <sounds name="Laser">
+      <sounds name="snd_bullet1">
         <sound>sound\snd_laser</sound>
         <sound>sound\snd_laser2</sound>
         <sound>sound\snd_laser3</sound>
@@ -20,11 +20,17 @@
         <sound>sound\snd_laser6</sound>
         <sound>sound\snd_laser7</sound>
         <sound>sound\snd_laser8</sound>
+        <sounds name="Hurt">
+          <sound>sound\snd_hurt</sound>
+          <sound>sound\snd_hurt2</sound>
+          <sound>sound\snd_hurt3</sound>
+        </sounds>
       </sounds>
-      <sounds name="Hurt">
-        <sound>sound\snd_hurt</sound>
-        <sound>sound\snd_hurt2</sound>
-        <sound>sound\snd_hurt3</sound>
+      <sounds name="snd_blue_laser">
+        <sound>sound\snd_blue_laser_1</sound>
+        <sound>sound\snd_blue_laser_2</sound>
+        <sound>sound\snd_blue_laser_3</sound>
+        <sound>sound\snd_blue_laser_4</sound>
       </sounds>
     </sounds>
   </sounds>
@@ -35,6 +41,7 @@
       <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_cursor_anim</sprite>
       <sprite>sprites\spr_player_boost</sprite>
+      <sprite>sprites\spr_blue_laser</sprite>
     </sprites>
     <sprites name="COLLISIONS">
       <sprite>sprites\spr_blue_wall</sprite>
@@ -45,8 +52,8 @@
       <sprites name="boss_1">
         <sprite>sprites\spr_boss_1</sprite>
         <sprite>sprites\spr_boss_1_shield</sprite>
+        <sprite>sprites\spr_boss_debris</sprite>
       </sprites>
-      <sprite>sprites\spr_fighter</sprite>
       <sprites name="Square">
         <sprite>sprites\spr_grounded</sprite>
         <sprite>sprites\spr_enemy_square</sprite>
@@ -54,6 +61,10 @@
       <sprites name="Projectiles">
         <sprite>sprites\spr_enemy_spew</sprite>
         <sprite>sprites\spr_proj_fighter</sprite>
+      </sprites>
+      <sprites name="fighter">
+        <sprite>sprites\spr_fighter</sprite>
+        <sprite>sprites\spr_fighter_debris</sprite>
       </sprites>
     </sprites>
     <sprites name="FX">
@@ -75,7 +86,7 @@
       <sprite>sprites\spr_asteroid</sprite>
       <sprite>sprites\spr_home_station</sprite>
     </sprites>
-    <sprite>sprites\sprite26</sprite>
+    <sprite>sprites\spr_camera_debug</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_black</background>
@@ -108,7 +119,6 @@
       <script>scripts\scr_player_boost.gml</script>
       <script>scripts\scr_player_normal.gml</script>
     </scripts>
-    <script>scripts\script15.gml</script>
     <scripts name="ENEMIES">
       <scripts name="BOSS1">
         <script>scripts\scr_boss_1_move.gml</script>
@@ -117,6 +127,7 @@
       </scripts>
       <script>scripts\scr_enemy_dead.gml</script>
     </scripts>
+    <script>scripts\scr_debris.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shd_white.shader</shader>
@@ -156,6 +167,7 @@
         <object>objects\obj_enemy_fighter</object>
       </objects>
       <object>objects\obj_parent_enemy</object>
+      <object>objects\obj_debris</object>
     </objects>
     <objects name="FX">
       <object>objects\obj_explosion_1</object>
@@ -172,6 +184,7 @@
       </objects>
       <objects name="Player Projectiles">
         <object>objects\obj_bullet1</object>
+        <object>objects\obj_blue_laser</object>
       </objects>
     </objects>
     <objects name="Star Control">
@@ -181,7 +194,6 @@
     <object>objects\obj_camera</object>
     <object>objects\obj_asteroid</object>
     <object>objects\obj_home_station</object>
-    <object>objects\obj_github_test</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_boss_1</room>

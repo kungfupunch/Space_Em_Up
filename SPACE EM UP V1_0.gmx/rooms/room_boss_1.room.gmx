@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1920" hview="1080" xport="0" yport="0" wport="1920" hport="1080" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1440" hview="810" xport="0" yport="0" wport="1920" hport="1080" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -56,23 +56,16 @@
     <instance objName="obj_camera" x="192" y="160" name="inst_2CA08A73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="2016" y="1088" name="inst_3EF54490" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_sound" x="256" y="160" name="inst_97E90190" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="0" y="0" name="inst_768C2DF0" locked="0" code="" scaleX="120" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="2144" name="inst_C76C82C5" locked="0" code="" scaleX="120" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="3808" y="32" name="inst_52606F16" locked="0" code="" scaleX="1" scaleY="66" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="32" name="inst_178F401B" locked="0" code="" scaleX="1" scaleY="66" colour="4294967295" rotation="0"/>
     <instance objName="cont_gui" x="320" y="160" name="inst_2D43CE04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cont_master" x="64" y="160" name="inst_CF084DE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_home_station" x="1088" y="1024" name="inst_3307462C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="3680" y="96" name="inst_C7B1445D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="3648" y="1024" name="inst_A8225A2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="128" y="992" name="inst_3B811EDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="3712" y="2080" name="inst_7EE0C33A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="2912" y="2016" name="inst_F7C5D8CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="2880" y="96" name="inst_95443170" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="2240" y="2048" name="inst_6E62D5FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="128" y="2048" name="inst_FF6BD640" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="2144" y="96" name="inst_21F027E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_enemy_fighter" x="64" y="64" name="inst_477A43AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_fighter" x="2496" y="640" name="inst_8FFEEE86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_fighter" x="896" y="320" name="inst_E84FC09A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_fighter" x="864" y="1632" name="inst_32963467" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_fighter" x="2912" y="1728" name="inst_A38954D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="0" y="0" name="inst_859A73E8" locked="0" code="" scaleX="120" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_planet" x="1344" y="704" w="320" h="320" xo="0" yo="0" id="10000008" name="inst_0C5FCCF3" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

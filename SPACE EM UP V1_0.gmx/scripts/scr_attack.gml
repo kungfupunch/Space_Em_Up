@@ -1,5 +1,11 @@
-if bullet_cd = 10 instance_create(x,y,obj_bullet1);
-        
-bullet_cd -=1;
 
-if bullet_cd < 0 {bullet_cd = 10};
+if canShoot {
+canShoot = false
+    instance_create(x,y,bullet);
+}
+    
+canShootTimer -=1;
+
+if canShootTimer <= 0 {
+    canShoot = true;
+    }

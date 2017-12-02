@@ -3,7 +3,7 @@
   <spriteName>spr_boss_1_shield</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,9 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle = obj_boss_1.image_angle;
+            <string>if instance_exists(obj_boss_1){
+image_angle = obj_boss_1.image_angle;
 x = obj_boss_1.x;
 y = obj_boss_1.y;
+}
+
+else if !instance_exists(obj_boss_1) instance_destroy();
 </string>
           </argument>
         </arguments>

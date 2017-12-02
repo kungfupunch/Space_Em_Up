@@ -35,4 +35,4 @@ if attackTimer <= 0
     }
 
 //switch to death state
-if hp <= 0 state = boss_1.death;
+if enemyHp <= 0 state = boss_1.death;

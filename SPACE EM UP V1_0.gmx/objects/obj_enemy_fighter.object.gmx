@@ -25,11 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spin = choose(.25,-.25);
-enemyHp = 1;
-spd = 3;
+            <string>enemyHp = 1;
+chaseSpd = 5;
+closeSpd = 2;
 attackCD = choose(1,2,3,4);
-deathDir = 0;
 image_speed = 0;
 
 
@@ -60,8 +59,8 @@ px = obj_player.x;
 py = obj_player.y;
 
     
-if enemyHp &gt; 0{
-deathDir = image_angle;    
+if enemyHp &gt; 0{ 
+    
     //Flocking behavior
     image_xscale*=6
     image_yscale*=6
@@ -72,35 +71,37 @@ deathDir = image_angle;
     y+=dsin(point_direction(x,y,target.x,target.y))
     }
     image_xscale/=6
-    image_yscale/=6
-    
+    image_yscale/=6 
+   
     //Sprite
     image_angle = point_direction(x,y,px,py);
     
     //Movement
-    move_towards_point(obj_player.x,obj_player.y,spd);
-    
-    
+    if (point_distance(x,y,px,py) &gt;= 500)
+        {           
+        spd = chaseSpd;
+        move_towards_point(px,py,spd);
+        }
+    else if (point_distance(x,y,px,py) &lt;= 499)
+        {
+        spd = closeSpd; 
+        direction *= -1; 
+        }
+                
     //Attack
-    attackCD-=1;
+  attackCD -= 1;
     if attackCD &lt;= 0 {
         instance_create(x,y,obj_proj_fighter);
-        attackCD = choose(1,2,3)*room_speed/2;
+        attackCD = choose(1,2,3)*room_speed;
     }
 }
 
 
+
 //Death
 if enemyHp &lt;= 0{
-    
-    direction = deathDir;
-    speed -= .03;
-    image_angle += spin;
-    scr_enemy_dead(spr_fighter,0.15);
-    image_alpha -=.005;
-    if image_alpha &lt;= .6 image_alpha =.6;
-    dead = true;
-    if speed &lt; 0.10 {speed = 0};
+    scr_debris(spr_fighter_debris,1,3,1,0);
+    instance_destroy();
 }
 
 </string>

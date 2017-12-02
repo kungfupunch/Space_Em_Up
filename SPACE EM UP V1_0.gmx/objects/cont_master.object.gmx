@@ -29,9 +29,11 @@
 randomize();
 gamepadConnected = false;
 room_persistent = true;
+window_set_cursor(cr_none);
+
+//Global Variables
 global.room_before_pause = room;
 global.enemies_killed = 0;
-window_set_cursor(cr_none);
 
 
 

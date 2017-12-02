@@ -30,11 +30,13 @@ damage = 1;
 cd = 60;
 cdTimer = cd;
 spd = 20;
-bulletDir = obj_player.bulletDir;
+aim = random_range(-5,5);
+bulletDir = obj_player.bulletDir + aim;
 hit = false;
 hitAnim = 3;
 image_index = 0;
 image_speed = 0;
+with obj_player canShootTimer = 10;
 
 
 // Set direction 

@@ -29,8 +29,9 @@
 state = 0;
 depth = 0;
 gpConnected = false;
-global.hp = 100;
-global.maxHp = 100
+global.hp = 1000;
+global.maxHp = 100;
+global.bulletCd = 0;
 spd = 0;
 normalSpeed = 7
 boostSpeed = 25;
@@ -41,11 +42,11 @@ yaxis = 0;
 shootXaxis = 0;
 shootYaxis = 0;
 shootDir = 0;
-bullet = obj_bullet1;
 canShoot = true;
+canShootTimer = 0;
 magnitude = 0; 
 threshold = 0.25;
-bullet_cd = 15;
+bullet = obj_blue_laser;
 bulletDirX = 0;
 bulletDirY = 0;
 particles = true;
@@ -134,6 +135,52 @@ switch(state)
             <kind>1</kind>
             <string>draw_self();
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="50">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>bullet = obj_blue_laser;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="49">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>bullet = obj_bullet1;
 </string>
           </argument>
         </arguments>

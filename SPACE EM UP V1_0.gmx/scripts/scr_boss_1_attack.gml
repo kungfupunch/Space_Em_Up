@@ -42,7 +42,7 @@ if moveTimer <= 0
     }
 
 //switch to death state
-if hp <= 0 
+if enemyHp <= 0 
     {
     xPos = x;
     yPos = y;
